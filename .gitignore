@@ -1,23 +1,38 @@
-# Virtual environment
+
+# Python virtual environment
 venv/
+.venv/
 
 # Environment variables and secrets
 .env
+.env.*
+!.env.example
 
-# Python cache
+# Python cache files
 __pycache__/
 *.py[cod]
 
 # VS Code settings
 .vscode/
 
-# Generated files
+# Generated logs
 logs/*
-charts/*
-reports/*
-data/raw/*
-data/processed/*
+!logs/.gitkeep
 
-# OS files
+# Generated charts
+charts/*
+!charts/.gitkeep
+
+# Generated reports
+reports/*
+!reports/.gitkeep
+
+# Generated data files
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Operating system files
 .DS_Store
 Thumbs.db
